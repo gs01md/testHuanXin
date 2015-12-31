@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1742065FE679C69252658CDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F47AF049EBB51C59D90C6F6 /* libPods.a */; };
+		6E5070461C34D4CC001CD642 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E5070481C34D4CC001CD642 /* Localizable.strings */; };
+		6E50704C1C34DD01001CD642 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E50704E1C34DD01001CD642 /* InfoPlist.strings */; };
+		6E5070531C34FCE9001CD642 /* ChatViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5070521C34FCE9001CD642 /* ChatViewListController.m */; };
+		6E5070561C3500A6001CD642 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5070551C3500A6001CD642 /* ChatViewController.m */; };
 		6EAECE5B1C3378E300EBF8E3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAECE5A1C3378E300EBF8E3 /* MobileCoreServices.framework */; };
 		6EAECE5D1C3378EE00EBF8E3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAECE5C1C3378EE00EBF8E3 /* CFNetwork.framework */; };
 		6EAECE5F1C33794B00EBF8E3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAECE5E1C33794B00EBF8E3 /* libsqlite3.tbd */; };
@@ -27,6 +31,16 @@
 /* Begin PBXFileReference section */
 		0F47AF049EBB51C59D90C6F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D0A768660044E93002875B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6E5070421C34D1E0001CD642 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		6E5070431C34D1E0001CD642 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		6E5070471C34D4CC001CD642 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6E5070491C34D4D0001CD642 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6E50704D1C34DD01001CD642 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E50704F1C34DD02001CD642 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6E5070511C34FCE9001CD642 /* ChatViewListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewListController.h; sourceTree = "<group>"; };
+		6E5070521C34FCE9001CD642 /* ChatViewListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewListController.m; sourceTree = "<group>"; };
+		6E5070541C3500A6001CD642 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		6E5070551C3500A6001CD642 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		6EAECE5A1C3378E300EBF8E3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6EAECE5C1C3378EE00EBF8E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6EAECE5E1C33794B00EBF8E3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -68,6 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E5070501C34FCAA001CD642 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				6E5070571C35034C001CD642 /* CustomizableCell */,
+				6E5070511C34FCE9001CD642 /* ChatViewListController.h */,
+				6E5070521C34FCE9001CD642 /* ChatViewListController.m */,
+				6E5070541C3500A6001CD642 /* ChatViewController.h */,
+				6E5070551C3500A6001CD642 /* ChatViewController.m */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		6E5070571C35034C001CD642 /* CustomizableCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomizableCell;
+			sourceTree = "<group>";
+		};
 		6EFE5C941C32A15C00ADECFB = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +122,8 @@
 		6EFE5C9F1C32A15C00ADECFB /* testHuanxin */ = {
 			isa = PBXGroup;
 			children = (
+				6E5070501C34FCAA001CD642 /* chat */,
+				6E5070481C34D4CC001CD642 /* Localizable.strings */,
 				6EFE5CA31C32A15C00ADECFB /* AppDelegate.h */,
 				6EFE5CA41C32A15C00ADECFB /* AppDelegate.m */,
 				6EFE5CA61C32A15C00ADECFB /* ViewController.h */,
@@ -98,6 +133,7 @@
 				6EFE5CAE1C32A15C00ADECFB /* LaunchScreen.storyboard */,
 				6EFE5CB11C32A15C00ADECFB /* Info.plist */,
 				6EFE5CA01C32A15C00ADECFB /* Supporting Files */,
+				6E50704E1C34DD01001CD642 /* InfoPlist.strings */,
 			);
 			path = testHuanxin;
 			sourceTree = "<group>";
@@ -179,6 +215,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6EFE5C941C32A15C00ADECFB;
 			productRefGroup = 6EFE5C9E1C32A15C00ADECFB /* Products */;
@@ -196,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EFE5CB01C32A15C00ADECFB /* LaunchScreen.storyboard in Resources */,
+				6E5070461C34D4CC001CD642 /* Localizable.strings in Resources */,
 				6EFE5CAD1C32A15C00ADECFB /* Assets.xcassets in Resources */,
 				6EFE5CAB1C32A15C00ADECFB /* Main.storyboard in Resources */,
+				6E50704C1C34DD01001CD642 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +297,8 @@
 			files = (
 				6EFE5CA81C32A15C00ADECFB /* ViewController.m in Sources */,
 				6EFE5CA51C32A15C00ADECFB /* AppDelegate.m in Sources */,
+				6E5070561C3500A6001CD642 /* ChatViewController.m in Sources */,
+				6E5070531C34FCE9001CD642 /* ChatViewListController.m in Sources */,
 				6EFE5CA21C32A15C00ADECFB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +306,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6E5070481C34D4CC001CD642 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E5070471C34D4CC001CD642 /* en */,
+				6E5070491C34D4D0001CD642 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6E50704E1C34DD01001CD642 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E50704D1C34DD01001CD642 /* en */,
+				6E50704F1C34DD02001CD642 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6EFE5CA91C32A15C00ADECFB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6EFE5CAA1C32A15C00ADECFB /* Base */,
+				6E5070421C34D1E0001CD642 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -277,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6EFE5CAF1C32A15C00ADECFB /* Base */,
+				6E5070431C34D1E0001CD642 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -369,6 +430,7 @@
 			baseConfigurationReference = 61D0A768660044E93002875B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testHuanxin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wood.testHuanxin;
@@ -381,6 +443,7 @@
 			baseConfigurationReference = 7F7327C4B7A2571B26B5378F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testHuanxin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wood.testHuanxin;
